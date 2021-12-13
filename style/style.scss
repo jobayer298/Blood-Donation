@@ -76,10 +76,30 @@ background: #fafafa;
 }
 
 }
+//request for blood
+.request-for-blood{
+    position: absolute;
+    top: 290px;
+    right: -106px;
+    text-decoration: none;
+    background: $primary-color;
+    color: #fafafa;
+    padding: 8px 30px;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: .3s;
+    position: fixed;
+    &:hover{
+        right: 0;
+        color: #fafafa;
+    }
+}
 // 2nd section
 .donate{
+    position: relative;
     padding: 80px 0px;
     background: #e6e7e9;
+    
     .info{
         width: 471px;
         h1{
@@ -213,5 +233,167 @@ background: #fafafa;
             }
         }
     }
+    }
+}
+// request section
+.request{
+    padding: 50px 0px;
+    .heading{
+        margin-bottom: 80px;
+        h1{
+            position: relative;
+            @include heading;
+            @include before_and_after;
+            &::before{
+                    left: 316px;
+                }
+                &::after{
+                    right: 440px;
+                }
+        }
+    }
+}
+
+//Recent Donors section
+
+.donor{
+    padding: 80px 0px;
+    .heading{
+        h1{
+            position: relative;
+            @include heading;
+            @include before_and_after;
+            &::before{
+                    left: 316px;
+                }
+                &::after{
+                    right: 440px;
+                }
+        }
+    }
+}
+
+// health section 
+
+.health{
+    background: #F9F9F9;
+    padding: 100px 0px;
+    position: relative;
+    .wrapper{
+        width: 100%;
+        .first-row{
+            .info{
+                width: 50%;
+                .heading{
+                    @include heading;
+                }
+                p{
+                    font-size: 18px;
+                }
+                ul{
+                    margin-left: -31px;
+                    li{
+                        
+                        margin-bottom: 10px;
+                        font-size: 18px;
+                    }
+                }
+            }
+            .image{
+                width: 50%;
+                img{
+                    margin-left:90px;
+                }
+            }
+        }
+        .second{
+            .information{
+                width: 50%;
+                margin-top: 57px;
+                margin-left: 30px;
+                h1{
+                    @include heading;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+// volunteer section
+
+.volunteer{
+    padding: 100px 0px;
+    .heading{
+        h1{
+        position: relative;
+        @include heading;
+        @include before_and_after;
+        &::before{
+                left: 316px;
+            }
+            &::after{
+                right: 440px;
+            }
+        }
+    }
+    .slider{
+        .carousel-cell{
+            border-radius: 5px;
+            text-align: center;
+            margin-right: 20px;
+            width: 255px;
+            height: 390px;
+            background: #F2E7E2;
+            position: relative;
+            .circle{
+                height: 40px;
+                width: 40px;
+                color: $primary-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid $primary-color;
+                position: absolute;
+                top: 30px;
+                right: 57px;
+                border-radius: 50%;
+                z-index: 2;
+                background: #fafafa;
+                font-weight: 600;
+            }
+            .w3-image{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                margin-top: 30px;
+                border: 3px solid $primary-color;
+                position: relative;
+            }
+            .info{
+                h4{
+                    font-weight: 700;
+                    color: $blueish;
+                }
+                p{
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+            }
+            .social{
+                i{
+                    padding: 0px 8px;
+                    font-size: 19px;
+                    transition: .2s;
+                    cursor: pointer;
+                    color: #797777;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
     }
 }
