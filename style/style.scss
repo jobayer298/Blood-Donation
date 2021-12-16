@@ -10,6 +10,9 @@ $blueish:#0C0C35;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
 // header design
 header{
     background: $blueish ;   
@@ -96,19 +99,69 @@ background: #fafafa;
 }
 // 2nd section
 .donate{
+    width: 100%;
+    height: 600px;
     position: relative;
-    padding: 80px 0px;
-    background: #e6e7e9;
+    .blakish{
+        @include blakish;
+    }
+    .slider{
+        position: relative;
+        
+        img{
+            width: 100%;
+            height: 600px;
+            z-index: -2;
+        }
+        .btnn2{
+            left: 10px;
+        }
+        .btnn1{
+            position: absolute;
+            right: 10px;
+            
+        }
+        button{
+            height: 50px;
+            width: 50px;
+            background: #666363;
+            border-radius: 50%;
+            border: 1px solid rgba(170, 165, 165, 0.733);
+            outline: none;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            i{
+                color: #ff043e;
+                font-size: 28px;
+                pointer-events: none;
+                z-index: 1;
+                cursor: pointer;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    position: relative;
+    // padding: 80px 0px;
+    // background: #e6e7e9;
     
     .info{
+        position: absolute;
+        top: 120px;
+        left: 186px;
+        z-index: 1;
         width: 471px;
         h1{
             @include heading;
+            color: $primary-color;
             
         }
         p{
             font-size: 18px;
             font-weight: 500;
+            color: #ddd !important;
         }
         button{
             padding: 16px 29px;
@@ -116,6 +169,7 @@ background: #fafafa;
             border: none;
             outline: none;
             font-weight: bold;
+            
         }
         .btn1{
             background: $primary-color;
@@ -170,6 +224,7 @@ background: #fafafa;
     }
 }
 
+
 // available section
 
 .available{
@@ -218,6 +273,7 @@ background: #fafafa;
                     color: $primary-color;
                     border-radius: 10px;
                     transition: .3s;
+                    font-weight: 700;
                     
                 }
                 a{
@@ -284,7 +340,7 @@ background: #fafafa;
         .first-row{
             .info{
                 width: 50%;
-                .heading{
+                h1{
                     @include heading;
                 }
                 p{
@@ -342,7 +398,7 @@ background: #fafafa;
     .slider{
         .carousel-cell{
             border-radius: 5px;
-            text-align: center;
+            
             margin-right: 20px;
             width: 255px;
             height: 390px;
@@ -395,5 +451,127 @@ background: #fafafa;
                 }
             }
         }
+    }
+}
+
+// counter section
+.counter{
+    padding: 80px 0px;
+    background: $primary-color;
+    .row{
+        i{
+            color: #fff;
+            font-size: 50px;
+        }
+        h1{
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        p{
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+}
+
+// peopleSaying section
+.peopleSaying{
+    .wrapper{
+        .carousel-cell{
+            .redLine{
+                position: absolute;
+                background: $primary-color;
+                height: 5px;
+                width: 0;
+                left: 0;
+                bottom: 0;
+                transition: .3s;
+                
+            }
+            border-radius: 5px;
+            margin-right: 20px;
+            width:40%;
+            height: 320px;
+            background: #F2E7E2;
+            position: relative;
+            &:hover .redLine{
+                width: 100%;
+            }
+            .w3-image{
+                height: 100px;
+                width: 100px;
+                border: none;
+                margin-top: 50px;
+            }
+            .info{
+                width: 62%;
+                margin-top: 49px;
+                font-weight: 400 !important;
+                span{
+                    font-size: 17px;
+                }
+                .star{
+                    i{
+                        color: rgb(255, 189, 6);
+                    }
+                }
+            }
+            
+           
+           
+        }
+    }
+}
+
+//inspire section
+
+.inspire{
+    position: relative;
+    background-image: url(../images/bg3.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    
+    padding:90px 0px ;
+    .color{
+        @include blakish;
+        
+    }
+    .row{
+        .text{
+            z-index: 1;
+            width: 70%;
+            h1{
+                font-weight: 700;
+                font-size: 49px;
+                color: #fff;
+            }
+            
+        }
+        .joinBtn{
+            z-index: 1;
+              
+                margin-top: 59px;
+                margin-left: 90px;
+                a{
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    padding: 17px 35px;
+                    transition: .3s;
+                    border: none;
+                    outline: none;
+                    font-weight: bold;
+                    background: $primary-color;
+                    
+                    &:hover{
+                        background: $blueish;
+                    }
+                }
+            }
     }
 }
