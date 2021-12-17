@@ -1,0 +1,26 @@
+.all_donors{
+    padding: 80px 0px;
+}
+.box{
+    margin-right: 20px;
+    border: 1px solid rgb(221, 212, 212);
+    overflow: hidden;
+}
+.box .w3-image{
+    transition: .3s;
+}
+.box .w3-image:hover{
+    transform: scale(1.1);
+}
+.info h4{
+    color: #0b153c;
+    font-weight: 600;
+    font-size: 21px;
+}
+.info p{
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.info p span{
+    color: red;
+}

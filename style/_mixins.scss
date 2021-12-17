@@ -1,8 +1,10 @@
+@import  "_volunteer";
+@import  "_about";
 @mixin primary-btn($bg , $color) {
     background: $bg;
     font-size: 16px;
     color: $color;
-    font-weight: 500;
+    font-weight: 500;  
     display: block;
     transition: .3s;
     border: none;
