@@ -28,29 +28,28 @@
     font-weight: 700;
     color: $blueish;
     font-size: 54px;
-    color: $blueish;
     font-size: 41px;
     position: relative;
     
 }
-@mixin before_and_after{
-    &::before{
-    content: "";
-    position: absolute;
-    background: #D6151F;
-    height: 6px;
-    width: 70px;
-    bottom: -22px;
-    margin-left: 211px;
-}
-    &::after{
-    content: "";
-    position: absolute;
-    background: #ab8f8f;
-    height: 2px;
-    width: 210px;
-    bottom: -20px;
-    margin-left: -345px;
-    z-index: -1;
-}
-}
+// @mixin before_and_after{
+//     &::before{
+//     content: "";
+//     position: absolute;
+//     background: #D6151F;
+//     height: 6px;
+//     width: 70px;
+//     bottom: -22px;
+//     margin-left: 211px;
+// }
+//     &::after{
+//     content: "";
+//     position: absolute;
+//     background: #ab8f8f;
+//     height: 2px;
+//     width: 210px;
+//     bottom: -20px;
+//     margin-left: -345px;
+//     z-index: -1;
+// }
+// }

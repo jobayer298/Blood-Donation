@@ -36,3 +36,6 @@ input{
     font-weight: 700;
     font-size: 41px;
 }
+input.sameWidth {
+    width: 265px;
+}
