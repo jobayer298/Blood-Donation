@@ -1,5 +1,4 @@
 
-$primary-color : #D6151F;
 .volunteerr{
     position: relative;
     height: 400px;
@@ -30,6 +29,12 @@ $primary-color : #D6151F;
           left: 227px;;
           .link{
               text-decoration: none;
+              color: #ddd;
+              font-size: 17px;
+              span{
+                  color: #ddd;
+                  font-size: 17px;
+              }
           }
         
         h1{

@@ -2,6 +2,9 @@
 @import  "_mixins";
 @import  "_volunteer";
 @import  "_about";
+@import  "_login";
+@import  "_joinDonor";
+
 $primary-color : #D6151F;
 $blueish:#0C0C35;
 *{
@@ -27,9 +30,18 @@ header{
         align-items: center;
     }
     .iconsAndLogin{
-        .icons i{
+        
+        .icons {
+            .iconn{
+                &:hover{
+            color: $primary-color;
+            }
+            }
+            i{
             margin-right: 22px;
             cursor: pointer;
+        }
+        
         }
         .button{
             padding: 6px 30px;
@@ -198,7 +210,7 @@ background: #fafafa;
         .process-heading{
             .heading-text{
                 @include heading;
-                @include before_and_after;
+                // @include before_and_after;
             }
         }
         .process-pic{
@@ -235,7 +247,7 @@ background: #fafafa;
         .available-heading{
             h1{
                 @include heading;
-                @include before_and_after;
+                // @include before_and_after;
                 &::before{
                     margin-left: 180px;
                 }
@@ -301,7 +313,7 @@ background: #fafafa;
         h1{
             position: relative;
             @include heading;
-            @include before_and_after;
+            // @include before_and_after;
             &::before{
                     left: 316px;
                 }
@@ -316,9 +328,6 @@ background: #fafafa;
 
 .donor{
     padding: 80px 0px;
-    .heading{
-
-    }
     .box{
         margin-right: 20px;
         overflow: hidden;
@@ -411,7 +420,7 @@ background: #fafafa;
         h1{
         position: relative;
         @include heading;
-        @include before_and_after;
+        // @include before_and_after;
         &::before{
                 left: 316px;
             }
@@ -676,3 +685,4 @@ footer{
             margin-top: 10px;
         }
     }
+    
