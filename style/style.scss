@@ -4,6 +4,7 @@
 @import  "_about";
 @import  "_login";
 @import  "_joinDonor";
+@import  "_opos";
 
 $primary-color : #D6151F;
 $blueish:#0C0C35;
@@ -327,6 +328,12 @@ background: #fafafa;
 //Recent Donors section
 
 .donor{
+    .heading-donor{
+        h1{
+            color: $blueish;
+            font-weight: 700;
+        }
+    }
     padding: 80px 0px;
     .box{
         margin-right: 20px;
